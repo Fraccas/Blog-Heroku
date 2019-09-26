@@ -1,3 +1,3 @@
 
-let environment = process.env.Node_ENV || 'development'; // node_env undefined
-export default require(`./${environment}`).default;
+let environment = process.env.Node_ENV || 'production'; // node_env undefined so set production default
+export default require(`./${environment}`).default; 
