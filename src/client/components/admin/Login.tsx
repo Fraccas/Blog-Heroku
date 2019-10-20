@@ -47,6 +47,7 @@ export default class Login extends React.Component<ILoginProps, ILoginState> {
                     this.setState({loginError: true});
                 }
             } catch(e) {
+                console.log(e);
                 throw e;
             } finally {
                 this.loggingIn = false;

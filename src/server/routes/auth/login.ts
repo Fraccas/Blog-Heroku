@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.post('/', passport.authenticate('local'), async (req:any, res, next) => {
     try {
+        console.log('token started');
         let token = await CreateToken({ userid: req.user.id });
         res.json({
             token,
